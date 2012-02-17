@@ -1,1 +1,2 @@
 此版本的web服务端采用了事件驱动的回调函数的方式启动web服务端，将onRequest()函数，作为request事件的处理函数。
+并且从代码中，也可以看出，node执行的语句的异步执行特性（不是全部），在listen之后，程序立即就输出了Server has started.提示，并没有hang在listen语句上。

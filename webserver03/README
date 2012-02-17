@@ -1,0 +1,9 @@
+此版本采用了模块化的设计思路，web服务端组件放在server.js文件中，在该组件的末尾使用
+    exports.start = start;
+语句将该组件的start函数发布给其它组件使用。
+
+index.js文件为本应用的主程序，负责引用我们开发的server组件，并调用server组件的start()方法。
+
+启动方法：
+
+node index.js
